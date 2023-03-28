@@ -53,3 +53,21 @@ export const NavbarMobileArea = styled("div", {
   display: "flex",
   justifyContent: "space-between",
 });
+
+export const Buttons = styled("button", {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: "0.75rem 1.5rem",
+  borderRadius: "0.375rem",
+  fontWeight: 500,
+  cursor: "pointer",
+  backgroundColor: "$brand1",
+  color: "$white",
+  transition: "background-color 0.2s ease-in-out",
+  "&:hover": {
+    backgroundColor: "$brand1",
+  },
+});
+
+
