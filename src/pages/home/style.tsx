@@ -144,3 +144,28 @@ export const ProjectAreaWrapperColumns = styled("div", {
     flexDirection: "column",
   },
 });
+
+export const AboutMeArea = styled("section", {
+  padding: "$section 0",
+  backgroundColor: "$grey0",
+  backgroundImage: `url(${dots})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "left top 11rem",
+  "@tablet": {
+    backgroundPosition: "right top 8rem",
+    padding: "$sectionMobile 0",
+  },
+});
+
+export const AboutMeSpace = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  gap: "2rem",
+
+  "@mobile": {
+    width: "100%",
+    position: "static",
+    order: "2",
+    marginTop: "5rem",
+  },
+});

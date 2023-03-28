@@ -8,6 +8,7 @@ import {
   LogoTipoText,
   NavbarLinks,
   NavbarMobileArea,
+  Buttons
 } from "./style";
 
 import { FaBars } from "react-icons/fa";
@@ -65,6 +66,9 @@ export const NavLinks = (): JSX.Element => {
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#projects`}>
         Projects
+      </Button>
+      <Button type="btLink" as="a" color="grey4" href={`#aboutme`}>
+        About Me
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#contact`}>
         Contact
