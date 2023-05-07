@@ -79,3 +79,14 @@ export const ContactCardContent = styled("div", {
   display: "grid",
   gridGap: "$2",
 });
+
+export const MailContent = styled("div", {
+  backgroundColor: "$grey0",
+  width: "50%",
+  borderRadius: "$1", 
+  border: "2px solid #fff",
+  textAlign: "center",
+  cursor: "pointer"
+});
+
+

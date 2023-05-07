@@ -70,4 +70,10 @@ export const Buttons = styled("button", {
   },
 });
 
+export const NavBtn = styled("div", {
+  "&:hover": {
+    color: "$brand1",
+  },
+});
+
 

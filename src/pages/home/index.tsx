@@ -92,7 +92,22 @@ export const Home = (): JSX.Element => {
               About Me:
             </Text>
             <Text as="h3" type="body1" color="grey3">
-              Professional in career transition from Veterinary to the technology area. After 2 years working as a quality supervisor in a food industry, I realized that technology was my area, as it presented the challenges that I wanted so much and the opportunities that I was looking for, and every day I seek to improve myself in new technologies to become a complete professional.
+            Professional in career transition from Veterinary to the technology area. After 2 years working as a quality supervisor in a food industry, I realized that technology was my area, as it presented the challenges that I wanted so much and the opportunities that I was looking for, and every day I seek to improve myself in new technologies to become a complete professional.
+            </Text>  
+            <Text as="h3" color="grey3">   
+            Languages:
+            </Text>
+            <Text as="h3" color="grey3">
+            English - Advanced
+            </Text>
+            <Text as="h3" color="grey3">
+            Italian - Intermediary
+            </Text>
+            <Text as="h3" color="grey3">
+            Spanish - Intermediary
+            </Text>
+            <Text as="h3" color="grey3">
+            Portuguese - Native
             </Text>
           </AboutMeSpace>
         </Container>

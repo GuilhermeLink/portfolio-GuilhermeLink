@@ -10,6 +10,7 @@ import {
   ContactCard,
   ContactCardImage,
   ContactCardContent,
+  MailContent
 } from "./style";
 
 import { FaEnvelopeOpen, FaLinkedin } from "react-icons/fa";
@@ -51,19 +52,21 @@ export const Contacts = () => {
                 <Text color="grey2" type="body2">
                   Send me an email reporting feedbacks, suggestions and ideas
                 </Text>
-
-                <Text
-                  as="a"
-                  color="grey2"
-                  type="body2"
-                  target="_blank"
-                  href={`mailto=${userData.emailUser}`}
-                  onClick={() =>
-                    (window.location.href = "mailto:guilhermemachado755@gmail.com")
-                  }
-                >
-                  Send me an email
-                </Text>
+                <MailContent>
+                  <Text
+                    as="a"
+                    className="mail"
+                    color="grey2"
+                    type="body2"
+                    target="_blank"
+                    href={`mailto=${userData.emailUser}`}
+                    onClick={() =>
+                      (window.location.href = "mailto:guilhermemachado755@gmail.com")
+                    }
+                  >
+                    Send me an email
+                  </Text>
+                </MailContent>
               </ContactCardContent>
             </ContactCard>
             <ContactCard>
@@ -78,15 +81,17 @@ export const Contacts = () => {
                   We can create more constant interactions as well as a sharing
                   network
                 </Text>
-                <Text
-                  as="a"
-                  color="grey2"
-                  type="body2"
-                  target="_blank"
-                  href={linkedInUrl}
-                >
-                  Go to LinkedIn now
-                </Text>
+                <MailContent>
+                  <Text
+                    as="a"
+                    color="grey2"
+                    type="body2"
+                    target="_blank"
+                    href={linkedInUrl}
+                    >
+                    Go to LinkedIn now
+                  </Text>
+                </MailContent>
               </ContactCardContent>
             </ContactCard>
           </ContactsCards>

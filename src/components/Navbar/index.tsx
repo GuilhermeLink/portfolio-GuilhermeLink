@@ -8,7 +8,8 @@ import {
   LogoTipoText,
   NavbarLinks,
   NavbarMobileArea,
-  Buttons
+  Buttons,
+  NavBtn
 } from "./style";
 
 import { FaBars } from "react-icons/fa";
@@ -61,20 +62,30 @@ export const NavBar = (): JSX.Element => {
 export const NavLinks = (): JSX.Element => {
   return (
     <NavbarLinks>
-      <Button type="btLink" as="a" color="grey4" href={`#home`}>
+      <Button type="btLink" className="navBtn" as="a" color="grey4" href={`#home`}>
+      <NavBtn>
         Home
+      </NavBtn>
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#projects`}>
+      <Button type="btLink" className="navBtn" as="a" color="grey4" href={`#projects`}>
+      <NavBtn>
         Projects
+      </NavBtn>  
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#aboutme`}>
+      <Button type="btLink" className="navBtn" as="a" color="grey4" href={`#aboutme`}>
+      <NavBtn>
         About Me
+      </NavBtn>
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#contact`}>
+      <Button type="btLink" className="navBtn" as="a" color="grey4" href={`#contact`}>
+      <NavBtn>
         Contact
+      </NavBtn>  
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#social-media`}>
+      <Button type="btLink" className="navBtn" as="a" color="grey4" href={`#social-media`}>
+      <NavBtn>
         Social Media
+      </NavBtn>  
       </Button>
     </NavbarLinks>
   );
