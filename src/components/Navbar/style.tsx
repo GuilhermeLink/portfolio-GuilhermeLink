@@ -71,6 +71,9 @@ export const Buttons = styled("button", {
 });
 
 export const NavBtn = styled("div", {
+  border: "solid 1px",
+  padding: "10px",
+  borderRadius: "8px",
   "&:hover": {
     color: "$brand1",
   },

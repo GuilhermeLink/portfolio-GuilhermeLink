@@ -13,6 +13,8 @@ import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
 import { FaGithub } from "react-icons/fa";
+import { MdLanguage } from "react-icons/md";
+
 
 // Page Style
 import {
@@ -98,16 +100,20 @@ export const Home = (): JSX.Element => {
             Languages:  
             </Text>
             <Text as="h3" color="grey3">
-            English - Advanced
+              <MdLanguage />
+              English: Advanced
             </Text>
             <Text as="h3" color="grey3">
-            Italian - Intermediary
+              <MdLanguage />
+              Italian: Intermediary
             </Text>
             <Text as="h3" color="grey3">
-            Spanish - Intermediary
+              <MdLanguage />
+              Spanish: Intermediary
             </Text>
             <Text as="h3" color="grey3">
-            Portuguese - Native
+              <MdLanguage />
+              Portuguese: Native
             </Text>
           </AboutMeSpace>
         </Container>

@@ -2,6 +2,12 @@ import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 
+export const StyledDiv = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  marginBottom: "$3"
+});
+
 export const ProjectStack = styled(Flex, {
   margin: "1.25rem 0 1.25rem 0",
   "@mobileLittle": {
@@ -82,3 +88,4 @@ export const Project = styled("article", {
     },
   },
 });
+

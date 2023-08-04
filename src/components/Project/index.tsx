@@ -5,12 +5,14 @@ import {
   ProjectStackTech,
   ProjectLink,
   ProjectLinks,
+  StyledDiv
 } from "./style";
 
 import { Text } from "@/styles/Text";
 import { useEffect, useState } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
 import { userData } from "@/utils/userData";
+import { AiFillFolder } from "react-icons/ai";
 
 interface ReposType {
   id: number;
@@ -45,14 +47,16 @@ export const Project = (): JSX.Element => {
       {repositories &&
         repositories?.map?.((repository) => (
           <ProjectWrapper key={repository.id}>
-            <ProjectTitle
-              as="h2"
-              type="heading3"
-              css={{ marginBottom: "$3" }}
-              color="grey5"
-            >
-              {repository.name}
-            </ProjectTitle>
+            <StyledDiv>
+              <AiFillFolder style={{ color: 'F8F9FA', fontSize: '24px', marginRight: '8px' }} />
+              <ProjectTitle
+                as="h2"
+                type="heading3"
+                color="grey5"
+                >
+                {repository.name}
+              </ProjectTitle>
+            </StyledDiv>
 
             <ProjectStack>
               <Text type="body2" color="grey5">
