@@ -23,7 +23,7 @@ export const ProjectLinks = styled(Flex, {
 
 export const ProjectLink = styled("a", {
   fontSize: "1rem",
-  color: "$grey2",
+  color: "$grey5",
   fontWeight: "500",
   marginRight: "$2",
   display: "flex",
@@ -43,6 +43,9 @@ export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
   marginTop: "4rem",
+  padding: "20px",
+  borderRadius: "var(--radii-1)",
+  backgroundColor: "$brand1",
   [`&:first-child`]: {
     [`& ${ProjectTitle}:first-child`]: {
       position: "relative",
@@ -59,7 +62,7 @@ export const Project = styled("article", {
         right: "-4rem",
         width: "max-content",
         height: "28px",
-        backgroundColor: "$brand1",
+        backgroundColor: "$brand2",
         padding: "0px 8px",
         borderRadius: "var(--radii-1)",
         fontSize: "14px",

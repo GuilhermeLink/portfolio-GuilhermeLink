@@ -159,6 +159,9 @@ export const AboutMeArea = styled("section", {
 export const AboutMeSpace = styled("div", {
   display: "flex",
   flexDirection: "column",
+  backgroundColor: "$brand1",
+  borderRadius: "var(--radii-1)",
+  padding: "20px",
   gap: "2rem",
 
   "@mobile": {

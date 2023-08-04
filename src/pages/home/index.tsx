@@ -31,7 +31,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}`;
 
   return (
     <main id="home">
@@ -57,7 +57,7 @@ export const Home = (): JSX.Element => {
             </Text>
             <Text type="body1" color="grey2">
               Discover here in this environment, created especially for you, all
-              my projects and technologies
+              my projects and technologies.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -94,8 +94,8 @@ export const Home = (): JSX.Element => {
             <Text as="h3" type="body1" color="grey3">
             Professional in career transition from Veterinary to the technology area. After 2 years working as a quality supervisor in a food industry, I realized that technology was my area, as it presented the challenges that I wanted so much and the opportunities that I was looking for, and every day I seek to improve myself in new technologies to become a complete professional.
             </Text>  
-            <Text as="h3" color="grey3">   
-            Languages:
+            <Text as="h3" type="heading4" color="grey3">
+            Languages:  
             </Text>
             <Text as="h3" color="grey3">
             English - Advanced
