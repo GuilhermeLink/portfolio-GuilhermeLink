@@ -79,4 +79,13 @@ export const NavBtn = styled("div", {
   },
 });
 
+export const NavVis = styled("div", {
+  color: "$white",
+  width: "100px",
+  backgroundColor: "$brand1",
+  border: "solid 1px",
+  padding: "10px",
+  borderRadius: "8px"
+});
+
 
