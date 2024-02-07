@@ -1,7 +1,6 @@
 import { useState } from "react";
 import useMedia from "use-media";
 import { userData } from "@/utils/userData";
-import VisitCounter from "./visits";
 
 import {
   Navbar as NavbarWrapper,
@@ -88,7 +87,6 @@ export const NavLinks = (): JSX.Element => {
         Social Media
       </NavBtn>  
       </Button>
-      <VisitCounter />
     </NavbarLinks>
   );
 };
