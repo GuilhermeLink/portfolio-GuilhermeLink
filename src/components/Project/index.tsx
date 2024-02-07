@@ -34,9 +34,11 @@ export const Project = (): JSX.Element => {
 
       const json = await data.json();
 
-      setRepositories(json);
+      const latestRepositories = json.slice(0, 4);
 
-      return json;
+      setRepositories(latestRepositories);
+
+      return latestRepositories;
     };
 
     fetchData();
@@ -45,7 +47,7 @@ export const Project = (): JSX.Element => {
   return (
     <>
       {repositories &&
-        repositories?.map?.((repository) => (
+        repositories.map((repository) => (
           <ProjectWrapper key={repository.id}>
             <StyledDiv>
               <AiFillFolder style={{ color: 'F8F9FA', fontSize: '24px', marginRight: '8px' }} />
